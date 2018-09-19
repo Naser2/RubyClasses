@@ -3,6 +3,7 @@ class BankAccount
    #attribute Reader
   attr_reader :amount, :account_number, :type
 
+  #initializer
 	def initialize(account_number, amount, type)
     # instance variables
 		@account_number = account_number,
@@ -19,4 +20,4 @@ class BankAccount
 
 end
 puts nas =  BankAccount.new("123abc", 1.00, "saving")
-puts nas.show_balance + 30.0
+puts nas.show_balance(3.00)
